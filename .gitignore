@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.env.local
+*.log
+.vscode/settings.json
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
