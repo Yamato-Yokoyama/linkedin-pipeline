@@ -1,25 +1,58 @@
 # LinkedIn Pipeline
 
-Yamato's LinkedIn content pipeline — managed with Markdown + Git + Notion MCP.
+A content pipeline for managing LinkedIn posts with Markdown, Git, and Notion MCP.
+
+Built by [@Yamato-Yokoyama](https://github.com/Yamato-Yokoyama) — MSc Computational Linguistics student at the University of Tübingen, building toward a Product Engineer career in Germany.
+
+## Why
+
+Most content creators manage posts in ad-hoc notes apps that become unsearchable graveyards. This pipeline treats LinkedIn content like code: versioned, templated, and automated where possible — while keeping human judgment in the loop for voice and nuance.
+
+Target audience of the posts:
+- Japanese students interested in Computational Linguistics / NLP
+- Japanese students considering studying abroad in Germany
+
+## Stack
+
+- **Markdown** — source of truth for all post content
+- **Git** — version control and edit history
+- **Notion** (via MCP) — dashboard view + mobile-friendly inbox
+- **VSCode + Claude Code** — authoring and agentic automation
+- **Python** — analytics scripts (post performance, category distribution)
 
 ## Structure
+linkedin-pipeline/
+├── inbox/        # Raw brain dumps (iPad voice input → here)
+├── drafting/     # Posts being edited
+├── scheduled/    # Ready to post
+├── published/    # Archive of published posts
+├── templates/    # 7 post templates
+├── scripts/      # Automation (Notion sync, formatting)
+└── assets/       # Images, GIFs, diagrams
 
-- `inbox/` — Raw brain dumps from voice input
-- `drafting/` — Posts being edited
-- `scheduled/` — Ready to post
-- `published/` — Archive
-- `templates/` — 7 post templates (Technical / Build in Public / Germany×Tech / Event / Research / Mindset / Resource)
-- `scripts/` — Automation (Notion sync, formatting)
-- `assets/` — Images, GIFs, diagrams
+## Post Templates
+
+1. **Technical Deep Dive** — Showing technical work with numbers
+2. **Build in Public** — Progress updates on ongoing projects
+3. **Germany × Tech** — Study-abroad and tech-life in Germany
+4. **Event / Learning Report** — Takeaways from events and talks
+5. **Research Note** — Paper reviews and concept breakdowns
+6. **Mindset / Reflection** — Personal growth writing
+7. **Resource Drop** — Downloadable PDFs and guides
 
 ## Workflow
 
-1. iPad voice input → Notion Inbox
-2. Pull to `inbox/` via Claude Code + Notion MCP
-3. Edit in VSCode, move through `drafting/` → `scheduled/`
-4. Publish to LinkedIn (manual)
-5. Move to `published/`, update Notion status
+1. Capture on mobile: voice input → Notion Inbox
+2. Pull locally: Claude Code + Notion MCP → `inbox/`
+3. Draft: edit in VSCode, promote to `drafting/` → `scheduled/`
+4. Publish: post to LinkedIn (manual), then move to `published/`
+5. Sync status back to Notion via MCP
 
 ## Notion Database
 
-https://www.notion.so/da96da3143474c9b90ab3451f1647af6
+Schema and views managed via Notion MCP. Database URL is kept private (contains work-in-progress drafts).
+
+## License
+
+Content in `published/` is All Rights Reserved.
+Scripts and templates are MIT licensed.
