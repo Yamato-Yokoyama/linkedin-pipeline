@@ -21,7 +21,7 @@ Target audience of the posts:
 - **Python** — analytics scripts (post performance, category distribution)
 
 ## Structure
-'''
+```
 linkedin-pipeline/
 ├── inbox/        # Raw brain dumps (iPad voice input → here)
 ├── drafting/     # Posts being edited
@@ -30,7 +30,7 @@ linkedin-pipeline/
 ├── templates/    # 7 post templates
 ├── scripts/      # Automation (Notion sync, formatting)
 └── assets/       # Images, GIFs, diagrams
-'''
+```
 
 Note: `inbox/`, `drafting/`, `scheduled/` are gitignored to keep work-in-progress private.
 
