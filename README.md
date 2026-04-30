@@ -2,7 +2,7 @@
 
 A content pipeline for managing LinkedIn posts with Markdown, Git, and Notion MCP.
 
-Built by [@Yamato-Yokoyama](https://github.com/Yamato-Yokoyama) — MSc Computational Linguistics student at the University of Tübingen, building toward a Product Engineer career in Germany.
+Built by [@Yamato-Yokoyama](https://github.com/Yamato-Yokoyama) — BA Computational Linguistics student at the University of Tübingen, building toward a Product Engineer career in Germany.
 
 ## Why
 
